@@ -1,0 +1,16 @@
+<div class="courseBlockContainer">
+    <div class="courseBlock">
+        <img class="courseBlock__courseImage" src="{{course.imageUrl}}" />
+        <div class="courseBlock__courseDetails">
+            <h4>{{course.title}}</h4>
+            <div>{{course.tutor}}</div>
+            <div>{{course.level}}</div>
+        </div>
+
+        <button class="courseBlock__detailsButton" (click)="toggleDetails()">{{isSelected ? "Hide" : "Show"}} Details</button>
+
+      </div>
+      <div class="courseBlock__callOut top" *ngIf="isSelected">
+      </div>
+
+</div>

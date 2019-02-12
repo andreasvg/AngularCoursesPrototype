@@ -1,0 +1,7 @@
+<app-course-block
+  *ngFor="let course of courses"
+  [course]="course"
+  [isSelected]="course.id === selectedCourse?.id"
+  (activate)="showCourseDetails($event)"
+  (deactivate)="hideCourseDetails($event)"></app-course-block>
+<app-course-description [course]="selectedCourse" *ngIf="selectedCourse"></app-course-description>

@@ -1,0 +1,64 @@
+@import '../../styles/variables';
+
+$blockHeight: 370px;
+$blockWidth: 300px;
+
+.courseBlockContainer {
+  width: $blockWidth;
+  float: left;
+  margin: 10px 10px 0px;
+}
+
+.courseBlock {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: $blockWidth;
+  height: $blockHeight;
+  background-color: $back-color;
+}
+
+.courseBlock__courseImage {
+  width: 300px;
+}
+
+.courseBlock__courseDetails {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.courseBlock__detailsButton {
+  position: absolute;
+  top: calc(100% - 40px);
+  width: 100%;
+  height: 40px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: $back-color-dark;
+  outline: none;
+}
+
+.courseBlock__callOut {
+  background-color: $back-color;
+	position: relative;
+  margin-bottom: 10px;
+	min-height: 0px;
+}
+
+.courseBlock__callOut::before {
+	content: "";
+	width: 0px;
+	height: 0px;
+	border: 0.8em solid transparent;
+	position: absolute;
+}
+
+.courseBlock__callOut.top::before {
+	left: 45%;
+  // bottom: -20px;
+  // border-top: 10px solid $back-color-dark;
+  border-bottom: 10px solid $back-color;
+  bottom: -10px;
+}
