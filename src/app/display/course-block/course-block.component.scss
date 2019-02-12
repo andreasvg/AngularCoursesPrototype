@@ -56,7 +56,8 @@ $blockWidth: 300px;
 }
 
 .courseBlock__callOut.top::before {
-	left: 45%;
+  left: 45%;
+  // The following turns the callout around:
   // bottom: -20px;
   // border-top: 10px solid $back-color-dark;
   border-bottom: 10px solid $back-color;
