@@ -15,7 +15,4 @@ export class CoursesService {
     return this.http.get('assets/data/pathData.json').pipe(map(data => <Course[]>data));
   }
 
-  getFoo(): string {
-    return 'foo';
-  }
 }
